@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'd*qd#vm$efd^-vmimyd(bh!s3#)prg1c3siwaf_^f#ef!u$+#3'
+SECRET_KEY = '3)tw38uhe*!51s!(8jakc$b-xqf%8opw0py&efb!g*a1$1bxx('
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,8 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'backend',
     'home',
-    'products'
+    'products',
 ]
 
 MIDDLEWARE = [
@@ -76,18 +77,15 @@ WSGI_APPLICATION = 'sales2018.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 # DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
 # }
-
-#'ENGINE': 'django.db.backends.mysql',
-#'ENGINE': 'mysql.connector.django',
 
 DATABASES = {
     'default': {
-	'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django21',
         'USER': 'django21',
         'PASSWORD': 'monkey3110',
