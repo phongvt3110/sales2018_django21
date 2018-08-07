@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'backend/common.css' %}">
+</head>
+<body>
+<h1>Welcome Admin page</h1>
+<h3>User Information</h3>
+<ul>
+    {% for k,v in user.items %}
+    <li>{{ k }} ===> {{ v }}</li>
+    {% endfor %}
+</ul>
+<h3>Hello {{ user.name }}</h3>
+<h3>Contacts phone number: {{ user.phone }}</h3>
+<h3>Role: {{ role }}</h3>
+</body>
+</html>
