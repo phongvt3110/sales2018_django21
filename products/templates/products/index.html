@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'products/common.css' %}" />
+</head>
+<body>
+<h1>Welcome</h1>
+<h4>This is List products page</h4>
+{% if products %}
+    <ul>
+       {% for product in products %}
+       <li>
+           <a href="detail/{{ forloop.counter0 }}">
+               {{ product }}
+           </a>
+       <li>
+       {% endfor %}
+    </ul>
+{% else %}
+   <p>No products are available.</p>
+{% endif %}
+</body>
+</html>
