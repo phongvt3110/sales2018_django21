@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home/commons.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/sidebar/sidebar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/advertise/advertisement.css' %}">
+</head>
+<body>
+    {% include "layouts/commons/header.html" %}
+    {% include "layouts/commons/left-sidebar.html" %}
+    {% include body %}
+    {% include "layouts/commons/right-sidebar.html" %}
+    {% include "layouts/commons/footer.html" %}
+</body>
+</html>

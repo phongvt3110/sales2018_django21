@@ -5,10 +5,11 @@ from products.models import Products
 from django.http import HttpResponse
 
 def index(request):
-    response = HttpResponse()
-    response.write("<h1>Welcome</h1>")
-    response.write("This is Home page")
-    return response
+    data = {
+        'body': 'layouts/sites/body.html',
+        'advertisement': 'layouts/sites/advertisement.html'
+    }
+    return render(request,'home/index.html',data)
 def news(request):
     response = HttpResponse()
     response.write("<h1>Welcome</h1>")
