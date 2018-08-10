@@ -11,13 +11,13 @@
 <h4>This is List products page</h4>
 {% if products %}
     <ul>
-       {% for product in products %}
+   {% for product in products %}
        <li>
-           <a href="detail/{{ forloop.counter0 }}">
-               {{ product }}
+           <a href="detail/{{ product.id }}">
+               Name: {{ product.name }} --  price:{{ product.price }}
            </a>
        <li>
-       {% endfor %}
+   {% endfor %}
     </ul>
 {% else %}
    <p>No products are available.</p>

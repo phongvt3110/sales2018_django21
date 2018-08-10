@@ -1,17 +1,17 @@
 from django.shortcuts import render
-
-# Create your views here.
+from products.models import Products
 
 def index(request):
-    products = ["Ford", "Volvo", "BMW", "Toyota", "Mazda"]
+    products = Products.objects.all()
     context = {
         'products': products
     }
     return render(request,'products/index.html', context)
 
 def detail(request, id):
+    product = Products.objects.get(pk=id)
     context = {
-        'id': id
+        'product': product
     }
     return render(request,'products/detail.html', context)
 
