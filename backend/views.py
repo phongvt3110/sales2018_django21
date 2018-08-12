@@ -7,6 +7,6 @@ def index(request):
     }
     data = {
         'user': user,
-        'role': "admin-role"
+        'role': "salesAdmin-role"
     }
     return render(request, 'backend/index.html', data)
