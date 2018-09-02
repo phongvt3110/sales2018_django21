@@ -89,6 +89,23 @@ WSGI_APPLICATION = 'sales2018.wsgi.application'
 
 # mysql-connector
 # 'ENGINE': 'mysql.connector.django',
+
+#Postgresql configure
+#'django.db.backends.postgresql_psycopg2',
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'sales2018',
+#         'USER': 'pvt',
+#         'PASSWORD': 'monkey3110',
+#         'HOST': '',
+#         'PORT': '',
+#     }
+# }
+
+#MySQL configure
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
