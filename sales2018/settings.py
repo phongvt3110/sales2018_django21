@@ -84,9 +84,17 @@ WSGI_APPLICATION = 'sales2018.wsgi.application'
 #     }
 # }
 
+#mysqlclient
+#'ENGINE': 'django.db.backends.mysql',
+
+# mysql-connector
+# 'ENGINE': 'mysql.connector.django',
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+        'OPTIONS': {
+               'init_command': 'SET default_storage_engine=INNODB',
+            },
         'NAME': 'django21',
         'USER': 'django21',
         'PASSWORD': 'monkey3110',

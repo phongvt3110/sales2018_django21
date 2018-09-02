@@ -2,6 +2,10 @@
 import os
 import sys
 
+# these settings used for pymysql driver
+# import pymysql
+# pymysql.install_as_MySQLdb()
+
 if __name__ == '__main__':
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'sales2018.settings')
     try:
