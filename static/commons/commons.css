@@ -1,14 +1,6 @@
 body{
     background: slategray;
 }
-h1{
-    color: chartreuse;
-}
-
-h4{
-    color: blue;
-}
-
-.common-layout {
-    background: steelblue;
+.commons-layout {
+    color: red;
 }
